@@ -12,6 +12,7 @@ body {
 }
 
 header {
+    text-align: right;
     background-color: #800000;
     color: #fff;
     padding: 20px;
