@@ -26,14 +26,43 @@ document.getElementById('purchaseForm').addEventListener('submit', function(even
   var email = document.getElementById('email').value;
   var product = document.getElementById('product').value;
   var quantity = document.getElementById('quantity').value;
+  var number = document.getElementById('number'). value;
 
   // Create email body
-  var emailBody = 'Name: ' + name + '\n';
-  emailBody += 'Email: ' + email + '\n';
-  emailBody += 'Product: ' + product + '\n';
-  emailBody += 'Quantity: ' + quantity + '\n';
+  var emailBody = 'Name: ' + Name + '\n';
+  emailBody += 'Email: ' + Email + '\n';
+  emailBody += 'Product: ' + Product + '\n';
+  emailBody += 'Quantity: ' + Quantity + '\n';
+  emailBody += 'Number: ' + Number + 'n';
 
   // Send email
   var mailtoLink = 'mailto:lloyd.delacruz090@gmail.com?subject=Purchase Information&body=' + encodeURIComponent(emailBody);
   window.location.href = mailtoLink;
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('.slide-up-text');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('show');
+  }
+}); window.addEventListener('scroll', function() {
+  var element = document.querySelector('.slide-up');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('appear');
+  }
+});
+window.addEventListener('DOMContentLoaded', function() {
+  var facebookLink = document.getElementById('facebook-link');
+  var emailLink = document.getElementById('email-link');
+  var phoneNumberLink = document.getElementById('phone-number-link');
+  
+  facebookLink.href = 'https://www.facebook.com/ALPSInteriorFunitureManufucturer';
+  emailLink.href = 'alpsts.crew@gmail.com';
+  phoneNumberLink.href = 'tel:+639625187943';
 });

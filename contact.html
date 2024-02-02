@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        nav {
+    font-size: large;
+	text-align: right;
+    background-color: none;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.body {
+  background-image: url('Pictures/g4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    list-style-type: none;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A L P S Interior</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+    <script src="page.cpp"></script>
 </head>
-<body>
+<body class="body">
+    <article class="fade-in">
     <header>
         <h2>A L P S Interior</h2>
-    </header>
     
     <nav>
         <ul>
+            <b>
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
+            </b>
         </ul>
     </nav>
-
-<section class="logo">
-<h2>Where you can contact Us?</h2>
-<p><b>You may Contact Us via</b></p>
-<ul>
-	<li><a href="https://www.facebook.com/ALPSInteriorFunitureManufucturer/" target="_blank">Facebook</a></li>
-	<li>Number
-	<ul>
-	<li>09625187943
-	</ul>
-</ul
+    </header>
+<body style="color: white;">
+    <ul>
+    <li><div class="contact-section">
+        <div class="contact-info">
+            <span>Our Facebook Page:</span>
+            <a href="https://www.facebook.com/ALPSInteriorFunitureManufucturer">Visit us on Facebook</a>
+        </div>
+        <li><div class="contact-info">
+            <span>Our Email:</span>
+            <a href="mailto:alpsts.crew@gmail.com">alpsts.crew@gmail.com</a>
+        </div>
+        <li><div class="contact-info">
+            <span>Phone Number:</span>
+            <a href="tel:+63962518943">09625187943</a>
+        </div>
+        <li><div class="contact-info">
+            <span>Our Location:</span>
+            <p>BLK 15 lot 3 & 4 Monaco Street, Baranggay Saog, Marilao Bulacan, Philippines</p>
+        </div>
+    </div>
 </ul>
+</article>
+</body>
+</html>

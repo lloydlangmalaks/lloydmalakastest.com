@@ -8,18 +8,25 @@
 </head>
 <body>
   <h1>ALPS Interior</h1>
-  <form id="purchaseForm">
+  <form action="mailto:lloyd.delacruz090@gmail.com" method="post" enctype="text/plain">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
-
+    
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-
+    
+    <label for="product">Product:</label>
+    <input type="text" id="product" name="product" required>
+    
     <label for="quantity">Quantity:</label>
     <input type="number" id="quantity" name="quantity" required>
 
-    <button type="submit">Buy</button>
+    <label for="quantity">Number:</label>
+    <input type="number" id="quantity" name="quantity" required>
+
+    <input type="submit" value="Submit">
   </form>
+  
 
   <script src="script.js"></script>
 </body>
