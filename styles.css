@@ -1,3 +1,5 @@
+
+
 html {
 scroll-behavior: smooth;
 }
@@ -8,8 +10,7 @@ body {
   background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 .page-transition {
     position: fixed;
@@ -37,7 +38,7 @@ header {
 }
 
 nav {
-    font-size: large;
+    font-size: x-large;
 	text-align: right;
     background-color: none;
     padding: 10px;
@@ -265,7 +266,7 @@ button:hover {
     opacity: 1;
 }
 .goal{
-  background-image: url('Pictures/bg3.jpg');
+  background-image: url('Pictures/bg2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -286,4 +287,104 @@ button:hover {
     font-family: Arial, sans-serif;
     color: white;
     list-style-type: none;
+}
+footer{
+background-color: darkgrey;
+  color: white;
+font-size: large;
+text-align: center;
+list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+}
+.ban {
+  margin: 0;
+  padding: 0;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#article-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #0056b3;
 }
