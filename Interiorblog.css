@@ -1,0 +1,141 @@
+
+
+html {
+    scroll-behavior: smooth;
+    }
+    body {
+     background-image: url('Pictures/bg5.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;    
+        }
+    .page-transition {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff0000;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .page-transition.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    header {
+        font-size: large;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    
+    nav {
+        font-size: large;
+        text-align: center;
+        background-color: none;
+        padding: 5px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+.baby{
+h2{
+    color: lightgrey;
+}
+p{
+    color: whitesmoke;
+}
+}
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .blog-post {
+    padding: 20px;
+    background-color: none;
+    border-radius: 5px;
+  }
+  
+  .blog-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .nav-text {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-text:hover {
+    transform: translateY(-3px);
+  }
+  
+  .nav-text:hover::after {
+    transform: scaleX(1);
+  }
+  
+  

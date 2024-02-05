@@ -4,7 +4,7 @@ body {
        overflow: hidden;
 }   
 header {
-    font-size: x-large;
+    font-size: large;
     text-align: left;
     background-color: none;
     color: #fff;
@@ -12,7 +12,7 @@ header {
 }
 
 nav {
-    font-size: x-large;
+    font-size: large;
 	text-align: right;
     background-color: none;
     padding: 10px;
@@ -52,7 +52,7 @@ nav ul li a {
   }
   
   .banner p {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   
@@ -143,3 +143,11 @@ nav ul li a {
 .form-submit:hover {
     background-color: #000;
 }
+.text-animation {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .text-animation:hover {
+    transform: scale(1.2);
+  }

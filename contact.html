@@ -2,11 +2,19 @@
 <html>
 <head>
     <style>
+      header {
+    font-size: large;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
         nav {
     font-size: large;
-	text-align: right;
+	text-align: center;
     background-color: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav ul {
@@ -51,7 +59,64 @@ nav ul li a {
   text-decoration: none;
   color: white;
 }
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
 
+.blog-post {
+  padding: 20px;
+  background-color: none;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.blog-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+.nav-text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-text:hover {
+  transform: translateY(-3px);
+}
+
+.nav-text:hover::after {
+  transform: scaleX(1);
+}
 
     </style>
   <meta charset="UTF-8">
@@ -64,35 +129,53 @@ nav ul li a {
     <article class="fade-in">
     <header>
         <h2>A L P S Interior</h2>
+        <p><b>Design • Furniture</b></p>
     
     <nav>
         <ul>
             <b>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="#">Contact</a></li>
-            </b>
+              <li><a  href="home.html" class="nav-text"><u>Home</u></a></li>
+              <li><a href="Interiorblog.html" class="nav-text"><u>About</u></a></li>
+              <li><a href="product.html" class="nav-text"><u>Product</u></a></li>
+              <li><a href="contact.html" class="nav-text"><u>Contact</u></a></li>
+                  </b>
         </ul>
     </nav>
     </header>
-<body style="color: white;">
+<body>
+    <h1>Visit:</h1>
     <ul>
-    <li><div class="contact-section">
+    <li>
+        <div class="blog-section">
+            <div class="blog-post">
+        <div class="contact-section">
         <div class="contact-info">
-            <span>Our Facebook Page:</span>
-            <a href="https://www.facebook.com/ALPSInteriorFunitureManufucturer"><b>Visit us on Facebook</b></a>
+            <h2 class="blog-title">Our Facebook Page:</h2>
+            <p class="blog-content"><a href="https://www.facebook.com/ALPSInteriorFunitureManufucturer"><b><u>A L P S Interior Furniture Manufacturer</b></u></a></p>
         </div>
-        <li><div class="contact-info">
-            <span>Our Email:</span>
-            <a href="mailto:alpsts.crew@gmail.com"><b>alpsts.crew@gmail.com</b></a>
         </div>
-        <li><div class="contact-info">
-            <span>Phone Number:</span>
-            <a href="tel:+63962518943"><b>09625187943</b></a>
+        <li>
+            <div class="blog-section">
+                <div class="blog-post">
+            <div class="contact-info">
+                <h2 class="blog-title">Our Email:</h2>
+                <p class="blog-content"></p><a href="mailto:alpsts.crew@gmail.com"><b><u>alpsts.crew@gmail.com</b></u></a></p>
         </div>
-        <li><div class="contact-info">
-            <span>Our Location:</span>
-            <p>BLK 15 lot 3 & 4 Monaco Street, Baranggay Saog, Marilao Bulacan, Philippines</p>
+        </div>
+        <li>
+            <div class="blog-section">
+                <div class="blog-post">
+            <div class="contact-info">
+                <h2 class="blog-title">Phone Number:</h2>
+                <p class="blog-content"> <a href="tel:+63962518943"><b><u>09625187943</b></u></a></p>
+        </div>
+        </div>
+        <li>
+            <div class="blog-section">
+                <div class="blog-post">
+            <div class="contact-info">
+                <h2 class="blog-title">Our Location:</h2>
+                <p class="blog-content">BLK 15 lot 3 & 4 Monaco Street, Baranggay Saog, Marilao Bulacan, Philippines</p>
         </div>
     </div>
 </ul>
