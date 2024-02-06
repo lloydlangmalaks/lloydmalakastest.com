@@ -10,7 +10,8 @@ html {
       background-size: cover;
         font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;    
+        padding: 0;
+        text-align: center;    
         }
     .page-transition {
         position: fixed;
@@ -31,7 +32,7 @@ html {
       }
     header {
         font-size: large;
-        text-align: center;
+        text-align: left;
         background-color: black;
         color: white;
         padding: 20px;
@@ -39,7 +40,7 @@ html {
     
     nav {
         font-size: large;
-        text-align: center;
+        text-align: right;
         background-color: none;
         padding: 5px;
     }
@@ -67,37 +68,31 @@ p{
     color: whitesmoke;
 }
 }
-.blog-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+  .blog-section {
+    padding: 20px;
+    background-color: none;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .blog-post {
-    padding: 20px;
-    background-color: none;
-    border-radius: 5px;
+    margin-bottom: 20px;
   }
   
   .blog-title {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   
   .blog-content {
     font-size: 16px;
-    margin-bottom: 10px;
+    line-height: 1.5;
   }
-  
-  .read-more {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .read-more:hover {
-    text-decoration: underline;
-  }
-  .fade-in {
+    .fade-in {
     opacity: 0;
     animation: fadeInAnimation ease 3s;
     animation-fill-mode: forwards;

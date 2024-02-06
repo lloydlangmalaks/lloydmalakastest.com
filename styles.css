@@ -32,7 +32,7 @@ height: 200px;
   }
 header {
     font-size: large;
-    text-align: center;
+    text-align: left;
     background-color: black;
     color: #fff;
     padding: 20px;
@@ -40,7 +40,7 @@ header {
 
 nav {
     font-size: large;
-	text-align: center;
+	text-align: right;
     background-color: none;
     padding: 5px;
 }
@@ -319,8 +319,9 @@ a {
 }
 
 .vidban {
+  font-size: large;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -339,7 +340,7 @@ a {
   font-family: Arial, sans-serif;
   font-size: 24px;
   overflow: hidden;
-  border-right: .15em solid #000;
+  border-right: .15em solid black;
   white-space: nowrap;
   letter-spacing: .15em;
   animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
@@ -364,11 +365,13 @@ a {
   }
 }
 .text-animation {
+  font-size: x-large;
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
 }
 
 .text-animation:hover {
+  font-size: xx-large;
   transform: scale(1.2);
 }
 button{
@@ -453,3 +456,4 @@ transform: translateX(0);
 .nav-text:hover::after {
   transform: scaleX(1);
 }
+
